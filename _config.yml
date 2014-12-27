@@ -10,3 +10,6 @@ github_username:  nkzhimingyuan
 
 # Build settings
 markdown: kramdown
+
+ analytics :
+    provider : custom
