@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: Blogging Like a Hacker
+title: New Year Resolution
 ---
 ### New Year Resolution
 * **生活**：  
 1、装修房子  
 2、骑单车锻炼身体
 * **事业**：  
-1、
+1、未知
 * **学习**：  
 1、学习Python  
 2、回顾linux 知识  
