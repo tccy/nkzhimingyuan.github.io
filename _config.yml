@@ -1,35 +1,14 @@
-# Jekyll configuration
+# Site settings
+title: Just a thinker
+email: zhimingyuan@126.com	
+description: > # this means to ignore newlines until "baseurl:"
+  爱生活，爱摄影，一个感性的程序猿。坚持“简单、纯粹才是最好的”。
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://nkzhimingyuan.github.io" # the base hostname & protocol for your site
 
-name: My blog
-description: A jekyll theme
+github_username:  nkzhimingyuan
 
-# url is currently only used only for the RSS feed in feed.xml
-url: http://scotte.github.io
+# Build settings
+markdown: kramdown
 
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
-baseurl: /jekyll-clean
 
-# This can be '' to hide the Github nav button
-github: 'scotte/jekyll-clean'
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
-
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: ''
-comments: true
-
-permalink: /:year/:month/:title
-paginate: 3
-
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-
-exclude: ['README.md', 'LICENSE']
