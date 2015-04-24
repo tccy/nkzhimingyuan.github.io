@@ -9,6 +9,6 @@ url: "http://nkzhimingyuan.github.io" # the base hostname & protocol for your si
 github_username:  nkzhimingyuan
 
 # Build settings
-markdown: kramdown
+markdown: Redcarpet
 
 
