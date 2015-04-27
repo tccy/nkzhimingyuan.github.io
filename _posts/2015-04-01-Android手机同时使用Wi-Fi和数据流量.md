@@ -29,29 +29,32 @@ title: Android手机同时使用Wi-Fi和数据流量
 
 
 ###查找方法
-想实现两个网卡同时起作用，我想到了两个方法：
-- 1、手机先成功连接Wi-Fi热点，这个时候再手动将rmnet0网卡设置为up状态，并且分配ip地址。
+想实现两个网卡同时起作用，我想到了两个方法：  
+
+- 1、手机先成功连接Wi-Fi热点，这个时候再手动将rmnet0网卡设置为up状态，并且分配ip地址。  
 - 2、手机使用数据流量，然后我们手动加载wlan0驱动，最后让网卡可以成功分配到ip地址。
 
 这是我自己想到的两个方法，在后续的研究中，我采用了第二个方法。就是通过手动的方式加载wlan0内核。
 
 ###实现方法
-在Android 系统中，有两种方式，分别是：wpa_supplicant方式和使用wireless-tools的方式。
+在Android 系统中，有两种方式，分别是：wpa_supplicant方式和使用wireless-tools的方式。  
+
 - wpa_supplicant：wpa_supplicant本是开源项目源码，被谷歌修改后加入android移动平台，它主要是用来支持WEP，WPA/WPA2和WAPI无线协议和加密认证的，而实际上的工作内容是通过socket（不管是wpa_supplicant与上层还是wpa_supplicant与驱动都采用socket通讯）与驱动交互上报数据给用户，而用户可以通过socket发送命令给wpa_supplicant调动驱动来对WiFi芯片操作。其优点是：可以支持多种加密方式的wifi 基站，缺点是：不支持所有驱动。
 
 - wireless-tools：Wireless tools for Linux是一个Linux命令行工具包，用来设置支持Linux Wireless Extension的无线设备。优点是：支持几乎所有的无线网卡和驱动，缺点是：不能连接到那些只支持WPA的AP，需要路由器设置为wep的加密方式才可以连接。
 
 ###使用wireless-tools方式驱动Wi-Fi
 ####准备工作
-1、需要预先编译wireless-tools（请参考“android4.2 wifi驱动添加和调试”）。
-2、编译完成后得到libiw.a，iwlist，iwconfig文件。
-3、使用Android 提供的 adb 工具，通过push 命令：
+1、需要预先编译wireless-tools（请参考“android4.2 wifi驱动添加和调试”）。  
+2、编译完成后得到libiw.a，iwlist，iwconfig文件。  
+3、使用Android 提供的 adb 工具，通过push 命令：  
 	  将libiw.a文件放入/system/lib目录下；
 	  将iwlist，iwconfig文件放入/system/bin目录下；
 	  ex：adb push e:\libiw.a /system/bin 
 	 
 ####通过命令启动Wi-Fi模块
 强调一下，下面的命令必须按顺序执行。
+
 1、	加载wlan0 驱动：
 命令：insmod  /system/lib/modules/wlan.ko 
 
