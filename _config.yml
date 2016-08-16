@@ -9,8 +9,10 @@ categories: null
 github_username:  tccy
 
 # Build settings
+markdown: kramdown
 kramdown:
-      input: GFM
+    input: GFM
+    syntax_highlighter: rouge
 encoding: utf-8
 
 
