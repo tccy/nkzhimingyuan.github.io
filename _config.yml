@@ -2,11 +2,11 @@
 title: 西北旺彦祖
 email: jack.tccy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  null
-baseurl: "" # the subpath of your site, e.g. /blog/
+  say something
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://tccy.github.io" # the base hostname & protocol for your site
 categories: null
-github_username:  changchunjie
+github_username:  tccy
 
 # Build settings
 #markdown: Redcarpet
