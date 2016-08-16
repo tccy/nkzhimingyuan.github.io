@@ -4,12 +4,12 @@ email: jack.tccy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   null
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://nkzhimingyuan.github.io" # the base hostname & protocol for your site
-categories: product technologh
-github_username:  nkzhimingyuan
+url: "http://tccy.github.io" # the base hostname & protocol for your site
+categories: null
+github_username:  changchunjie
 
 # Build settings
-markdown: Redcarpet
+#markdown: Redcarpet
 
 
 
