@@ -9,7 +9,8 @@ categories: null
 github_username:  tccy
 
 # Build settings
-#markdown: Redcarpet
-
+kramdown:
+      input: GFM
+encoding: utf-8
 
 
