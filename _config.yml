@@ -1,12 +1,12 @@
 # Site settings
-title: Just a thinker
-email: zhimingyuan@126.com	
+title: 西北旺彦祖
+email: jack.tccy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  爱生活，爱摄影，一个感性的程序猿。坚持“简单、纯粹才是最好的”。
+别闹
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://nkzhimingyuan.github.io" # the base hostname & protocol for your site
+url: "http://tccy.github.io" # the base hostname & protocol for your site
 categories: product technologh
-github_username:  nkzhimingyuan
+github_username:  tccy
 
 # Build settings
 markdown: Redcarpet
