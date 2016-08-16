@@ -8,3 +8,5 @@ title: hello world
 
 科科
 
+来一张自己的帅照镇楼
+![我的照片]({{ site.url  }}/static/彦祖.jpg)
