@@ -3,7 +3,7 @@ title: 西北旺彦祖
 email: jack.tccy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   say something
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tccy.github.io" # the base hostname & protocol for your site
 categories: null
 github_username:  tccy
